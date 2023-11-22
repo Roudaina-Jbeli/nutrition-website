@@ -1,10 +1,15 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    /* background-image: url("./images/agriculture-color-cooking-diet-4987af5c032da6cad746746e6308fc98.jpg"); */
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; /* Prevent vertical scrollbar */
 }
 
 .navbar {
-    background-color: #333;
+    background-color: rgba(11, 10, 10, 0.56);/* Add a semi-transparent black background to the navbar */
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -12,9 +17,11 @@ body {
 }
 
 .logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
+    color:white;
+    font-size: 90px;
+    align-items:center;
+    font-weight : bold;
+    margin-right: 20px;
 }
 
 .nav-links {
@@ -27,6 +34,24 @@ body {
     margin-right: 10px;
 }
 
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 .nav-link {
     color: #fff;
     text-decoration: none;
@@ -36,4 +61,9 @@ body {
 
 .nav-link:hover {
     background-color: #555;
+}
+#bodyofthepage{
+    background-image:url("https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2018/12/vegetables.jpg");
+    background-size: cover;
+    height: 1028px;
 }
