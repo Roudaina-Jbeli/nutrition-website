@@ -7,26 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="navbar">
-    <div class="logo">ZenEats</div>
-    <div class="nav-links">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Recipes</a>
-        <a href="#" class="nav-link">About Us</a>
-        <a href="#" class="nav-link">Contact</a>
-        <input type="text" class="search-bar" placeholder="Search...">
-        <a href="#" class="nav-link">Login</a>
-        <a href="#" class="nav-link">Sign Up</a>
+
+    <header class="header">
+        <a href="#" class="logo"><i class="fa fa-shopping-basket"></i>ZenEats</a>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="#Home" class="nav-link">Home</a>
+                <a href="#Features" class="nav-link">Features</a>
+                <a href="#Products" class="nav-link">Products</a>
+                <a href="#Categories" class="nav-link">Categories</a>
+                <a href="#Review" class="nav-link">Review</a>
+                <a href="#Blogs" class="nav-link">Blogs</a>
+                <a href="#" class="nav-link" onclick="showLogin()">Login</a>
+                <a href="#" class="nav-link" onclick="showSignup()">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="bodyofthepage">
+        <h3>Welcome to our shop</h3>
+
+        <!-- Login and Signup Forms (Initially hidden) -->
+        <div id="login-form" style="display: none;">
+            <h2>Login</h2>
+            <form onsubmit="return loginUser()">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="signup-form" style="display: none;">
+            <h2>Sign Up</h2>
+            <form onsubmit="return signupUser()">
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
     </div>
-</nav>
-<div id="bodyofthepage">
-<h3>Articles </h3>
-
-
-
-
-
-
 
     <footer>
         <div class="social-icons">
@@ -34,10 +57,30 @@
             <p id="copy">&copy; 2023 ZenEats. All rights reserved.</p>
         </div>
     </footer>
-</div>
 
+    <script src="main.js"></script>
 
+    <script>
+        function showLogin() {
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('signup-form').style.display = 'none';
+        }
 
-<script src="main.js"></script>
+        function showSignup() {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('signup-form').style.display = 'block';
+        }
+
+        function loginUser() {
+            alert('Login logic goes here!');
+            return false; 
+        }
+
+        function signupUser() {
+            alert('Signup logic goes here!');
+            return false; 
+        }
+    </script>
 </body>
 </html>
+
