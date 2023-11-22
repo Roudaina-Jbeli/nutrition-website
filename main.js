@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+function showLogin() {
+    document.getElementById('login-form').style.display = 'block';
+    document.getElementById('signup-form').style.display = 'none';
+}
+
+function showSignup() {
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('signup-form').style.display = 'block';
+}
+
+function loginUser() {
+    alert('Login logic goes here!');
+    return false; 
+}
+
+function signupUser() {
+    alert('Signup logic goes here!');
+    return false; 
+}
+=======
 
 // Get the modal
 var navlink = document.getElementById('id01');
@@ -10,3 +31,4 @@ window.onclick = function(event) {
 }
 
 
+>>>>>>> 9da3d8054e2cee9f6454c070752d5b17e88f5fda
