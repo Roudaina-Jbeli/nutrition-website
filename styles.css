@@ -148,28 +148,33 @@ html {
         .about .row .image img{
             width: 100%;
         }
-  .services{
-  background: var(--bg);
-    }
-  .services .box-container {
-   display: grid;
-   grid-template-columns: repeat (auto-fit, minmax (30rem, 1fr));
-    gap: 2rem;
-   margin-top: 8rem;
- }
- .services .box-container .box{
-    text-align: center;
-    padding:3rem;
-    background: var(--white);
-    box-shadow: 0.5rem 1rem rgba(0,0,0,1);
-    border-radius: 1rem;
-    margin-bottom: 8rem;
- }
- .services .box-container .box:hover,
- .services .box-container .box:hover .icon{
-    background: var(--primary);
- }
-
+        .services {
+            background: var(--bg);
+          }
+          
+          .services .box-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+            gap: 2rem;
+            margin-top: 8rem;
+          }
+          
+          .services .box-container .box {
+            text-align: center;
+            padding: 3rem;
+            background: var(--white);
+            box-shadow: 0.5rem 1rem rgba(0, 0, 0, 1);
+            border-radius: 1rem;
+            margin-bottom: 2rem; /* Adjusted margin */
+          }
+          
+          .services .box-container .box:hover,
+          .services .box-container .box:hover .icon {
+            background: var(--primary);
+          }
+          
+          /* Other styles remain the same */
+          
 .services .box-container .box .icon{
     width: 13rem;
     height: 13rem;
@@ -223,98 +228,105 @@ html {
 /*end*/
 /*diet*/
 
-.diet .controls{
+.diet .controls {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
-    gap:1.5rem;
-    list-style: none ;
-}
-.diet .controls  .buttons{
-    padding: 3rem ,2rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .diet .controls .buttons {
+    padding: 3rem 2rem;
     background: var(--white);
     cursor: pointer;
     margin-bottom: 3rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
     text-align: center;
     border-radius: 1rem;
-
-}
-.diet .controls .buttons img{
+  }
+  
+  .diet .controls .buttons img {
     height: 6rem;
-
-}
-.diet .controls .buttons h3{
+  }
+  
+  .diet .controls .buttons h3 {
     font-size: 1.7rem;
     padding-top: 1rem;
     color: var(--light-black);
-
-}
-.diet .controls .buttons.active{
+  }
+  
+  .diet .controls .buttons.active {
     background: var(--primary);
-
-}
-.diet .image-container{
+  }
+  
+  .diet .image-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-    gap:1.5rem;
-
-}
-.diet .image-container .box{
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .diet .image-container .box {
     background: var(--white);
     border-radius: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
     overflow: hidden;
-}
-.diet .image-container .box:hover .image img{
-transform: scale(1.1);
-}
-
-
-.diet .image-container .box{
-    height:  25rem;
+  }
+  
+  .diet .image-container .box:hover .image img {
+    transform: scale(1.1);
+  }
+  
+  .diet .image-container .box {
+    height: 25rem;
     overflow: hidden;
     width: 100%;
+  }
+  
+  .diet .image-container .box .image img {
+    height: 135px;
+    width: 500px;
+    object-fit: cover; /* or use 'contain' based on your preference */
+    object-position: center; /* or adjust based on your design */
+    gap: 15px; /* This property is not applicable to images */
 }
-.diet .image-container .box .image img{
-    height:  100%;
-    width: 100%;
-    object-fit: cover;
-}
-.diet .image-container .box .content{
+  
+  .diet .image-container .box .content {
     padding: 2rem;
-
-}
-.diet .image-container .box .content .link{
+  }
+  
+  .diet .image-container .box .content .link {
     font-size: 2rem;
     color: var(--main-color);
-}
-.diet .image-container .box .content p{
+  }
+  
+  .diet .image-container .box .content p {
     padding: 1rem 0;
-    font-size:  1,4rem;
+    font-size: 1.4rem;
     color: var(--light-black);
     line-height: 2;
-}
-
-.diet .image-container .box .content .icon{
+  }
+  
+  .diet .image-container .box .content .icon {
     padding-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.diet .image-container .box .content .icon a{
+  }
+  
+  .diet .image-container .box .content .icon a {
     font-size: 1.4rem;
-    color:var(--light-black)
-}
-.diet .image-container .box .content .icon a:hover{
-    color: var(var(--main-color));
-}
-
-.diet .image-container .box .content .icon a i{
+    color: var(--light-black);
+  }
+  
+  .diet .image-container .box .content .icon a:hover {
+    color: var(--main-color);
+  }
+  
+  .diet .image-container .box .content .icon a i {
     padding-right: 5rem;
     color: var(--main-color);
-}
-
-/*end*/
+  }
+    /*end*/
 
 /*pricing*/
 
@@ -322,14 +334,15 @@ transform: scale(1.1);
 background: var(--bg);
 padding-bottom: 8rem;
 }
-.pricing .box-container{
+.pricing .box-container {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Change from wrap to nowrap */
     gap: 6rem;
 }
+
 
 .pricing .box-container .box{
     height:52rem ;
@@ -791,3 +804,57 @@ form {
     from {transform: scale(0)}
     to {transform: scale(1)}
   }
+
+h2{
+    font-size: 30px;
+}
+ul{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section.footer{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+}
+div.box-container{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div#box2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+div#box3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+div#box4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
