@@ -1,34 +1,31 @@
-<<<<<<< HEAD
-function showLogin() {
-    document.getElementById('login-form').style.display = 'block';
-    document.getElementById('signup-form').style.display = 'none';
+var navbar=document.querySelector('.header.navbar')
+var menu=document.querySelector('#menu')
+$(document).ready (function() {
+    $('.buttons') .click(function(){
+    $(this).addClass('active').siblings ().removeClass('active');
+    var filter = $(this). attr('data-filter')
+    if(filter == 'all') {
+    $('.diet .box').show (400);
+    }
+    else{
+    $('.diet .box').not('.'+ filter).hide (200);
+    $('.diet .box').filter('.'+ filter).show(400);
+    }
+    });
+    });
+    var swiper =new Syiper('.review-slider',{
+loop: true,
+grabCursor : true ,
+spaceCetveen ,
+breakpoints:{
+0:{
+    slidesPerview:1,
+},
+640:{
+    slidesPerview:2
 }
-
-function showSignup() {
-    document.getElementById('login-form').style.display = 'none';
-    document.getElementById('signup-form').style.display = 'block';
+768:{
+    slidesPerview:3
 }
-
-function loginUser() {
-    alert('Login logic goes here!');
-    return false; 
 }
-
-function signupUser() {
-    alert('Signup logic goes here!');
-    return false; 
-}
-=======
-
-// Get the modal
-var navlink = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
->>>>>>> 9da3d8054e2cee9f6454c070752d5b17e88f5fda
+})
