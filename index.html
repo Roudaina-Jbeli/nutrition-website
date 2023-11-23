@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZenEats</title>
-     <!--swiper cdn link-->
+    <title>Nutrition Website</title>
+    <!--swiper cdn link-->
 <link rel="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bund1e.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header class="header">
-        <a href="#" class="logo"> diet</a>
+        <a href="#" class="logo">diet</a>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+        <nav class="navbar">
+            <!-- Your navigation links go here -->
+        </nav>
+        <div class="fas fa-bars" id="menu"></div>
+       </header>
+    <header class="header">
         <nav class="navbar">
         <a href="#home">home</a>
         <a href="#about">about</a>
@@ -37,11 +46,13 @@
     <div class="row">
     <div class="content">
     <h3>my mission is to give you a guideline for your health.</h3>
-    <p>For a healthy diet, focus on colorful fruits and veggies, whole grains, and lean proteins like chicken or beans. Skip processed foods high in salt and sugar. Stay hydrated with plenty of water, watch portion sizes, and eat slowly. Balance your meals with carbs, proteins, and healthy fats for sustained energy. Small changes add up for a healthier you!
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam quia qui delectus ex iusto
+    Expedita placeat enim, repellat amet sequi tenetur at odio debitis distinctio sapiente soluta sit inven
+    Voluptatibus fuga, distinctio nesciunt repellat neque optio laboriosam tempora eaque accusantium nobis
     <a href="#" class="btn"> read more</a>
     </div>
     <div class="image">
-    <img src="/images/Capture d'écran 2023-11-23 100527.png" alt="">
+    <img src="images/about.png" alt="">
     </div>
     </div>
 </section>
@@ -52,27 +63,7 @@
     <div class="box-container">
     <div class="box">
     <div class="icon">
-    <img src="images/diet_9677453.png" alt="">
-    </div>
-    <div class="content">
-    <h3>arranging a nutrition plan</h3>
-    <div class="line"></div>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, itaque. </p>
-    <h1 class="heading">our services</h1>
-    <div class="box-container">
-    <div class="box">
-    <div class="icon">
-    <img src="images/marathon_4781483.png" alt="">
-    </div>
-    <div class="content">
-    <h3>arranging a nutrition plan</h3>
-    <div class="line"></div>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, itaque. </p>
-    <h1 class="heading">our services</h1>
-    <div class="box-container">
-    <div class="box">
-    <div class="icon">
-    <img src="images/weight-loss_7126800.png" alt="">
+    <img src="images/service-1.png" alt="">
     </div>
     <div class="content">
     <h3>arranging a nutrition plan</h3>
@@ -94,26 +85,26 @@
     <h1 class="heading">diet plan</h1>
     <ul class="controls">
     <li class="buttons active" data-filter="all">
-    <img src="images/juice_3414872.png" alt="">
+    <img src=images/pic alt="">
     <h3>all</h3>
     </li>
     <li class="buttons" data-filter="breakfast">
-    <img src="images/breakfast_2652642.png" alt="">
+    <img src="images/diet-2.png" alt="">
     <h3>breakfast</h3>
     </li>
     <li class="buttons" data-filter="lunch">
-    <img src="images/food-restaurant_3928476.png" alt="">
+    <img src="images/diet-3.png" alt="">
     <h3>lunch</h3>
     </li>
     <li class="buttons" data-filter="dinner">
-    <img src="images/porridge_4991715.png" alt="">
+    <img src="images/diet-4.png" alt="">
     <h3>dinner</h3>
     </li>
     </ul>
     <div class="image-container">
         <div class="box lunch">
         <div class="image">
-        <img src="images/glass-food-drink-alcohol-wallpaper-preview.jpg" alt="">
+        <img src="images/diet_blog1.jpg" alt="">
         </div>
         <div class="content">
         <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
@@ -127,7 +118,7 @@
         <div class="image-container">
             <div class="box breakfast">
             <div class="image">
-            <img src="images/food-salad-vegetable-pepper-wallpaper-preview.jpg" alt="">
+            <img src="images/diet_blog1.jpg" alt="">
             </div>
             <div class="content">
             <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
@@ -141,7 +132,7 @@
             <div class="image-container">
                 <div class="box dinner">
                 <div class="image">
-                <img src="images/food-fruit-healthy-acorn-wallpaper-preview.jpg" alt="">
+                <img src="images/diet_blog1.jpg" alt="">
                 </div>
                 <div class="content">
                 <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
@@ -153,77 +144,6 @@
                 </div>
                 </div> 
                </div>
-               <div class="image-container">
-                <div class="box lunch">
-                <div class="image">
-                <img src="images/seafood-food-healthy-sea.jpg" alt="">
-                </div>
-                <div class="content">
-                <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                <div class="icon">
-                <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
-                <a href="#"><i class="fas fa-user"></i> by admin</a>
-                </div>
-                </div>
-                </div> 
-                <div class="image-container">
-                    <div class="box breakfast">
-                    <div class="image">
-                    <img src="images/skewer-kebab-barbecue-food.jpg" alt="">
-                    </div>
-                    <div class="content">
-                    <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                    <div class="icon">
-                    <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
-                    <a href="#"><i class="fas fa-user"></i> by admin</a>
-                    </div>
-                    </div>
-                    </div> 
-                    <div class="image-container">
-                        <div class="box dinner">
-                        <div class="image">
-                        <img src="images/table-plate-rice-carrots-wallpaper-preview.jpg" alt="">
-                        </div>
-                        <div class="content">
-                        <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                        <div class="icon">
-                        <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
-                        <a href="#"><i class="fas fa-user"></i> by admin</a>
-                        </div>
-                        </div>
-                        <div class="image-container">
-                    <div class="box breakfast">
-                    <div class="image">
-                    <img src="images/skewer-kebab-barbecue-food.jpg" alt="">
-                    </div>
-                    <div class="content">
-                    <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                    <div class="icon">
-                    <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
-                    <a href="#"><i class="fas fa-user"></i> by admin</a>
-                    </div>
-                    </div>
-                    </div> 
-                    <div class="image-container">
-                        <div class="box dinner">
-                        <div class="image">
-                        <img src="images/table-plate-rice-carrots-wallpaper-preview.jpg" alt="">
-                        </div>
-                        <div class="content">
-                        <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                        <div class="icon">
-                        <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
-                        <a href="#"><i class="fas fa-user"></i> by admin</a>
-                        </div>
-                        </div>
-                        </div> 
-                        
-                       </div>
 
 </section>
 <!-- diet section end -->
@@ -305,7 +225,6 @@
 <div class="info">
     <h3>ah med </h3>
     <span>client</span>
-    
 </div>
 </div>
 </div>
@@ -372,9 +291,87 @@
 
         </div>
         </div>
-        <div class="credit">created by<span> Jbeli Roudaina && Guelmemi Hiba</span> |all rights are reserved</div>
         </section>
       <!-- footer section ends -->
+      <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+</div>  
+<form action="action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+      <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
 
     <script>  
    </script>

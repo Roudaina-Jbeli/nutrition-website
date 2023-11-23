@@ -35,9 +35,36 @@ breakpoints:{
 },
 640:{
     slidesPerview:2
-}
+},
 768:{
     slidesPerview:3
 }
 }
 })
+
+
+    $(document).ready(function () {
+        $("#searchButton").click(function () {
+            var searchTerm = $("#searchInput").val().toLowerCase();
+
+            $(".content").each(function () {
+                var contentText = $(this).text().toLowerCase();
+                if (contentText.includes(searchTerm)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    });
+
+
+    // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
