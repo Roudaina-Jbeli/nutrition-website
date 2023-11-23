@@ -200,7 +200,7 @@ html {
      line-height: 2;
 }
 .services .box-container .box .content ul{
-    margin: :2rem 0;
+    margin:2rem 0;
     list-style:none
 }
 .services .box-container .box .content ul li {
@@ -303,7 +303,7 @@ transform: scale(1.1);
     color:var(--light-black)
 }
 .diet .image-container .box .content .icon a:hover{
-    color: :var(var(--main-color));
+    color: var(var(--main-color));
 }
 
 .diet .image-container .box .content .icon a i{
