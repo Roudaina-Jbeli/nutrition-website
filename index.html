@@ -4,84 +4,304 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZenEats</title>
+    swiper cdn link
+<link rel="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bund1e.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header class="header">
-        <a href="#" class="logo"><i class="fa fa-shopping-basket"></i>ZenEats</a>
+        <a href="#" class="logo"> diet</a>
         <nav class="navbar">
-            <div class="nav-links">
-                <a href="#Home" class="nav-link">Home</a>
-                <a href="#Features" class="nav-link">Features</a>
-                <a href="#Products" class="nav-link">Products</a>
-                <a href="#Categories" class="nav-link">Categories</a>
-                <a href="#Review" class="nav-link">Review</a>
-                <a href="#Blogs" class="nav-link">Blogs</a>
-                <a href="#" class="nav-link" onclick="showLogin()">Login</a>
-                <a href="#" class="nav-link" onclick="showSignup()">Sign Up</a>
-            </div>
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#diet">diet</a>
+        <a href="#pricing">pricing</a>
+        <a href="#review">review</a>
         </nav>
-    </header>
-
-    <div id="bodyofthepage">
-        <h3>Welcome to our shop</h3>
-
-        <!-- Login and Signup Forms (Initially hidden) -->
-        <div id="login-form" style="display: none;">
-            <h2>Login</h2>
-            <form onsubmit="return loginUser()">
-                <label for="login-username">Username:</label>
-                <input type="text" id="login-username" required>
-                <label for="login-password">Password:</label>
-                <input type="password" id="login-password" required>
-                <button type="submit">Login</button>
-            </form>
+        <div class="fas fa-bars" id="menu"></div>
+        </header>
+        <!-- header section ends -->
+<!-- home section starts -->
+<section class="home" id="home">
+    <div class="content">
+    <h3>welcome to the place full of healthy food</h3>
+    <a href="#" class="btn"> read more</a>
+    </div>
+    </section>
+    <!-- home section ends -->
+  <!-- about section starts -->
+<section class="about" id="about">
+    <h1 class="heading">about us</h1>
+    <div class="row">
+    <div class="content">
+    <h3>my mission is to give you a guideline for your health.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam quia qui delectus ex iusto
+    Expedita placeat enim, repellat amet sequi tenetur at odio debitis distinctio sapiente soluta sit inven
+    Voluptatibus fuga, distinctio nesciunt repellat neque optio laboriosam tempora eaque accusantium nobis
+    <a href="#" class="btn"> read more</a>
+    </div>
+    <div class="image">
+    <img src="images/about.png" alt="">
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+<!-- services section starts -->
+<section class="services" id="services">
+    <h1 class="heading">our services</h1>
+    <div class="box-container">
+    <div class="box">
+    <div class="icon">
+    <img src="images/service-1.png" alt="">
+    </div>
+    <div class="content">
+    <h3>arranging a nutrition plan</h3>
+    <div class="line"></div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, itaque. </p>
+<ul>
+<li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </li>
+<li><i class="fas fa-check"><</i>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+<li><i _class="fas fa-check"></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </li>
+<li><i class="fas fa-check" ></i>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+</ul>
+</div>
+    </div>
+    </div>
+</section>
+<!--services section ends-->
+<!-- diet section starts -->
+<section class="diet" id="diet">
+    <h1 class="heading">diet plan</h1>
+    <ul class="controls">
+    <li class="buttons active" data-filter="all">
+    <img src="images/diet-1.png" alt="">
+    <h3>all</h3>
+    </li>
+    <li class="buttons" data-filter="breakfast">
+    <img src="images/diet-2.png" alt="">
+    <h3>breakfast</h3>
+    </li>
+    <li class="buttons" data-filter="lunch">
+    <img src="images/diet-3.png" alt="">
+    <h3>lunch</h3>
+    </li>
+    <li class="buttons" data-filter="dinner">
+    <img src="images/diet-4.png" alt="">
+    <h3>dinner</h3>
+    </li>
+    </ul>
+    <div class="image-container">
+        <div class="box lunch">
+        <div class="image">
+        <img src="images/diet_blog1.jpg" alt="">
         </div>
-
-        <div id="signup-form" style="display: none;">
-            <h2>Sign Up</h2>
-            <form onsubmit="return signupUser()">
-                <label for="signup-username">Username:</label>
-                <input type="text" id="signup-username" required>
-                <label for="signup-password">Password:</label>
-                <input type="password" id="signup-password" required>
-                <button type="submit">Sign Up</button>
-            </form>
+        <div class="content">
+        <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+        <div class="icon">
+        <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
+        <a href="#"><i class="fas fa-user"></i> by admin</a>
         </div>
+        </div>
+        </div> 
+        <div class="image-container">
+            <div class="box breakfast">
+            <div class="image">
+            <img src="images/diet_blog1.jpg" alt="">
+            </div>
+            <div class="content">
+            <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            <div class="icon">
+            <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
+            <a href="#"><i class="fas fa-user"></i> by admin</a>
+            </div>
+            </div>
+            </div> 
+            <div class="image-container">
+                <div class="box dinner">
+                <div class="image">
+                <img src="images/diet_blog1.jpg" alt="">
+                </div>
+                <div class="content">
+                <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                <div class="icon">
+                <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
+                <a href="#"><i class="fas fa-user"></i> by admin</a>
+                </div>
+                </div>
+                </div> 
+               </div>
+
+</section>
+<!-- diet section end -->
+<!-- pricing section starts -->
+<section class="pricing" id="pricing">
+    <h1 class="heading">pricing plan</h1>
+    <div class="box-container">
+    <div class="box">
+    <h3 class="title">basic</h3>
+    <div class="price">
+    <span class="currency">$</span>
+    <span class="amount">30</span>
+    <span class="duration">/year</span>
+    </div>
+    <ul>
+        <ul>
+        <li> <i class="fas fa-check"></i> nutrition plan</li>
+        <li> <i class="fas fa-check"></i> training plan</li>
+        <li> <i class="fas fa-check"></i> body measurment</li>
+        </ul>
+        <p>60 days consultation</p>
+        <p>10 personal meetings</p>
+        <p>free access to additional materials</p>
+        <a href="#" class="btn"> read more</a> 
+    </ul>
     </div>
 
-
-    <footer>
-        <div class="social-icons">
-            <!-- Add social media icons (e.g., Facebook, Instagram, Twitter) -->
-            <p id="copy">&copy; 2023 ZenEats. All rights reserved.</p>
+    <div class="box-container">
+        <div class="box">
+        <h3 class="title">standart</h3>
+        <div class="price">
+        <span class="currency">$</span>
+        <span class="amount">70</span>
+        <span class="duration">/year</span>
         </div>
-    </footer>
+        <ul>
+            <ul>
+            <li> <i class="fas fa-check"></i> nutrition plan</li>
+            <li> <i class="fas fa-check"></i> training plan</li>
+            <li> <i class="fas fa-check"></i> body measurment</li>
+            </ul>
+            <p>80 days consultation</p>
+            <p>10 personal meetings</p>
+            <p>free access to additional materials</p>
+            <a href="#" class="btn"> read more</a> 
+        </ul>
+        </div>
+
+    <div class="box">
+        <h3 class="title">premium</h3>
+        <div class="price">
+        <span class="currency">$</span>
+        <span class="amount">90</span>
+        <span class="duration">/year</span>
+        </div>
+        <ul>
+            <ul>
+            <li> <i class="fas fa-check"></i> nutrition plan</li>
+            <li> <i class="fas fa-check"></i>training plan </li>
+            <li> <i class="fas fa-check"></i> body measurment</li>
+            </ul>
+            <p>90 days consultation</p>
+            <p>15 personal meetings</p>
+            <p>free access to additional materials</p>
+            <a href="#" class="btn"> read more</a> 
+        
+    </div>
+    </section>
+<!-- review section starts -->
+<section></section>
+<hl>reviews</hl>
+<div class="swiper review-slider">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide slide">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, itaque. </p>
+<div class="user"></div>
+<img src="images/person"alt="">
+<div class="info">
+    <h3>ah med </h3>
+    <span>client</span>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide slide">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, itaque. </p>
+    <div class="user"></div>
+    <img src="images/person"alt="">
+    <div class="info">
+        <h3>JOHN DEO </h3>
+        <span>client</span>
+    </div>
+</div>
+</div>
+</section>
+<!-- newsletter section starts-->
+
+<section class="newsletter">
+    <div class="content">
+    <hl class="heading">subscribe now</hl>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, impedit. Molestias officiis nihil optio sed quibusdam eius eum tempora ullam quo, iusto similique expedita soluta deleniti quam mollitia omnis dignissimos.</p>
+    <form action=""><input type="email" placeholder="enter your email" class="email"> 
+        <form action=""><input type="submit" value="subscribe">
+    </form>
+</div>
+    </section>
+    <!-- newsletter section ends -->
+     <!-- footer section starts -->
+     <section class="footer">
+        <div class="box-container">
+            <div class="box"></div>
+        <h3>quick links</h3>
+      <a  href="#home"> <i class="fas fa-arrow-right"></i>home</a>
+      <a href="#about"> <i class="fa-arrow-right"></i>about</a>
+      <a href="#services"> <i class="fas fa-arrow-right"></i>services</a>
+      <a href="#diet"> <i class="fas fa-arrow-right"></i>diet</a>
+      <a href="#blog"> <i class="fas fa-arrow-right"></i>blog</a>
+      <a href="#reviews"> <i class="fas fa-arrow-right"></i>reviews</a>
+        </div>
+        <div class="box">
+            <h3>extra links</h3>
+            <a  href="#"> <i class="fas fa-arrow-right"></i>my account</a>
+            <a href="#"> <i class="fa-arrow-right"></i>my order</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>my wishlist</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>ask questions</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>terms of use</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <a  href="#"> <i class="fas fa-phone"></i>+216 50376171</a>
+            <a href="#"> <i class="fas fa-phone"></i>+216 53896755</a>
+            <a href="#"> <i class="fas fa-envelope"></i>rbk@gmail.com</a>
+            <a href="#"> <i class="fas fa-map"></i>kef,Hay dir</a>
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <a  href="#"> <i class="fas fa-phone"></i>+216 50376171</a>
+            <a href="#"> <i class="fas fa-phone"></i>+216 53896755</a>
+            <a href="#"> <i class="fas fa-envelope"></i>rbk@gmail.com</a>
+            <a href="#"> <i class="fas fa-map"></i>kef,Hay dir</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a  href="#"> <i class="fab fa-facebook-f"></i>+facebook</a>
+            <a href="#"> <i class=" fab fa-twitter"></i>twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i>rinstagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="#"> <i class="fab fa-github"></i>github</a>
+
+        </div>
+        </div>
+        <div class="credit">created by<span> Jbeli Roudaina && Guelmemi Hiba</span> |all rights are reserved</div>
+        </section>
+      <!-- footer section ends -->
 
     <script src="main.js"></script>
-
-    <script>
-        function showLogin() {
-            document.getElementById('login-form').style.display = 'block';
-            document.getElementById('signup-form').style.display = 'none';
-        }
-
-        function showSignup() {
-            document.getElementById('login-form').style.display = 'none';
-            document.getElementById('signup-form').style.display = 'block';
-        }
-
-        function loginUser() {
-            alert('Login logic goes here!');
-            return false; 
-        }
-
-        function signupUser() {
-            alert('Signup logic goes here!');
-            return false; 
-        }
-    </script>
+    <script>  
+   </script>
+   <!-- jquery cdn link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--swipercdn link-->
+<script src="https://cdn.jsdeIivr.net/npm/swiper@9/swiper-bund1e.min.js"></script>
+<!--custom js link -->
+<script src="main.js"></script>
 </body>
 </html>
 
