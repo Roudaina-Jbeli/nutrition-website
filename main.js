@@ -1,5 +1,17 @@
 var navbar=document.querySelector('.header.navbar')
 var menu=document.querySelector('#menu')
+
+menu.onclick =() =>{
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
+};
+
+window.onscroll =() =>{
+menu.classList.remove('fa-times');
+navbar.classList.remove('active')
+};
+
+
 $(document).ready (function() {
     $('.buttons') .click(function(){
     $(this).addClass('active').siblings ().removeClass('active');
