@@ -35,7 +35,7 @@ breakpoints:{
 },
 640:{
     slidesPerview:2
-}
+},
 768:{
     slidesPerview:3
 }
@@ -47,11 +47,6 @@ breakpoints:{
         $("#searchButton").click(function () {
             var searchTerm = $("#searchInput").val().toLowerCase();
 
-            // Perform your search logic here
-            // You can use the searchTerm to filter or search content on your page
-
-            // For example, you can highlight matching text or show/hide elements based on the search term
-            // Here's a simple example that hides non-matching elements
             $(".content").each(function () {
                 var contentText = $(this).text().toLowerCase();
                 if (contentText.includes(searchTerm)) {
@@ -62,3 +57,14 @@ breakpoints:{
             });
         });
     });
+
+
+    // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
