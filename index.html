@@ -1,418 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition Website</title>
+    <title>Eat healthy</title>
     <!--swiper cdn link-->
-<link rel="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bund1e.min.css" />
+    <link rel="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bund1e.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header class="header">
-        <a href="#" class="logo">diet</a>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search...">
-            <button id="searchButton"><i class="fas fa-search"></i></button>
+<div class="main" id="main">
+    <div class="navbar">
+        <div class="left-buttons">
+            <!-- HTML !-->
+            <button class="button-24" role="button">Log out</button>
+
+
+            <img id="customImg" alt="Custom Image" />
+            <img class="icons" src="./images/shopping-cart.png" alt="Shopping Cart" />
+            <img class="icons" src="./images/location.png" alt="Location" />
         </div>
-        <nav class="navbar">
-            <!-- Your navigation links go here -->
-        </nav>
-        <div class="fas fa-bars" id="menu"></div>
-       </header>
-    <header class="header">
-        <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#services">services</a>
-        <a href="#diet">diet</a>
-        <a href="#pricing">pricing</a>
-        <a href="#review">review</a>
-        </nav>
-        <div class="fas fa-bars" id="menu"></div>
-        </header>
-        <!-- header section ends -->
-<!-- home section starts -->
-<section class="home" id="home">
-    <div class="content">
-    <h3>welcome to the place full of healthy food</h3>
-    <a href="#" class="btn"> read more</a>
     </div>
+    <header class="header">
+        <nav class="">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#diet">diet</a>
+            <a href="#pricing">pricing</a>
+            <a href="#review">review</a>
+        </nav>
+        <div class="fas fa-bars" id="menu"></div>
+    </header>
+    <!-- header section ends -->
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>welcome to the place full of healthy food</h3>
+            <a href="#" class="btn"> read more</a>
+        </div>
     </section>
     <!-- home section ends -->
-  <!-- about section starts -->
-<section class="about" id="about">
-    <h1 class="heading">about us</h1>
-    <div class="row">
-    <div class="content">
-    <h3>my mission is to give you a guideline for your health.</h3>
-    <p>Welcome to the website of the British Nutrition Foundation. 
-        We are a public-facing charity which exists to give people, educators and organisations access to reliable information on nutrition. Grounded in science; working with experts; supporting anyone on their journey towards a healthy, sustainable diet.   
-        Discover our education programme Food - a fact of life
-        <p>
-    <a href="#" class="btn"> read more</a>
-    </div>
-    <div class="image">
-    <img src="images\Capture d'écran 2023-11-23 100527.png" alt="">
-    </div>
-    </div>
-</section>
-<!-- about section ends -->
-<!-- services section starts -->
-<section class="services" id="services">
-    <h1 class="heading">Our Services</h1>
-    <div class="box-container">
-        <div class="box">
-            <div class="icon">
-                <img src="images/diet_9677453.png" alt="">
-            </div>
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <h1 class="heading">about us</h1>
+        <div class="row">
             <div class="content">
-                <h3>Arranging a Nutrition Plan</h3>
-                <div class="line"></div>
-                <p>The best diet plan for long-term weight loss involves switching out unhealthy eating habits for healthy ones. It should focus on more natural, unprocessed meal choices and include a balance of fruit and vegetables, protein and healthy fats, while being low in sugar and salt. </p>
+                <h3>my mission is to give you a guideline for your health.</h3>
+                <p>Welcome to the website of the British Nutrition Foundation.
+                    We are a public-facing charity which exists to give people, educators and organisations access to
+                    reliable information on nutrition. Grounded in science; working with experts; supporting anyone on
+                    their journey towards a healthy, sustainable diet.
+                    Discover our education programme Food - a fact of life
+                <p>
+                    <a href="#" class="btn"> read more</a>
             </div>
-        </div>
-
-        <div class="box">
-            <div class="icon">
-                <img src="images/marathon_4781483.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Marathon Training</h3>
-                <div class="line"></div>
-                <p>Training for your marathon means more than just putting in miles. Having your nutrition plan dialed in for before, during, and after the race is equally important. This guide from sports nutrition expert Asker Jeukendrup will help you create the right plan for all aspects of your race day nutrition. </p>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icon">
-                <img src="images/weight-loss_7126800.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Weight Loss Programs</h3>
-                <div class="line"></div>
-                <p>Fat loss refers to weight loss from fat, and it is a more specific and healthful goal than weight loss.Unintentional weight loss is when you lose weight without changing your diet or exercise routine, and it can be a sign of stress or a serious illness. </p>
-            </div>
-        </div>
-    </div>
-    <div id="advices">
-    <ul>
-        <h2>Advices</h2>
-        <li><i class="fas fa-check"></i>Some people avoid nuts because they are high in fat. However, nuts and seeds are incredibly nutritious. They are packed with protein, fiber, and a variety of vitamins and minerals.
-        </li>
-        <li><i class="fas fa-check"></i>Sugary drinks like sodas, fruit juices, and sweetened teas are the primary source of added sugar in the American diet.</li>
-        <li><i class="fas fa-check"></i>Despite some controversy over it, coffee is loaded with health benefits. </li>
-        <li><i class="fas fa-check"></i>Fish is a great source of high-quality protein and healthy fat. This is particularly true of fatty fish, such as salmon, which is loaded with anti-inflammatory omega-3 fatty acids and various other nutrients .</li>
-    </ul>
-</div>
-</section>
-<!--services section ends-->
-<!-- diet section starts -->
-<section class="diet" id="diet">
-    <h1 class="heading">diet plan</h1>
-    <ul class="controls">
-    <li class="buttons active" data-filter="all">
-    <img src= "images\téléchargement(2).jpegalt"alt="">
-    <h3>all</h3>
-    </li>
-    <li class="buttons" data-filter="breakfast">
-    <img src="https://imgs.search.brave.com/_S9wSMFhXFSawG16-M_DD-5LRqZWcYVaCMvxd198rGk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy9zbW9v/dGhpZS02NGY3YTE4/YjJjYTIxLmpwZz9j/cm9wPTAuNjY4eHc6/MS4wMHhoOzAuMTE5/eHcsMCZyZXNpemU9/MzYwOio" alt="">
-    <h3>breakfast</h3>
-    
-    </li>
-    <li class="buttons" data-filter="lunch">
-    <img src="images/food-fruit-healthy-acorn-wallpaper-preview.jpg" alt="">
-    <h3>lunch</h3>
-    </li>
-    <li class="buttons" data-filter="dinner">
-    <img src="images/diet-4.png" alt="">
-    <h3>dinner</h3>
-    </li>
-    </ul>
-    <div class="image-container">
-        <div class="box lunch">
-        <div class="image">
-        <img src="images/seafood-food-healthy-sea.jpg" alt="">
-        </div>
-        <div class="content">
-        <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-        <div class="icon">
-        <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
-        <a href="#"><i class="fas fa-user"></i> by admin</a>
-        </div>
-        </div>
-        </div> 
-        <div class="image-container">
-            <div class="box breakfast">
             <div class="image">
-            <img src="images/table-plate-rice-carrots-wallpaper-preview.jpg" alt="">
-                        </div>
-
-           <img src="images/table-plate-rice-carrots-wallpaper-preview.jpg" alt="" >
-           <img src="images/table-plate-rice-carrots-wallpaper-preview.jpg" alt="" >
-           <img src="images/table-plate-rice-carrots-wallpaper-preview.jpg" alt="" >
-            <div class="content">
-            <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            <div class="icon">
-            <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
-            <a href="#"><i class="fas fa-user"></i> by admin</a>
+                <img src="images\Capture d'Ã©cran 2023-11-23 100527.png" alt="">
             </div>
-            </div>
-            </div> 
-            <div class="image-container">
-                <div class="box dinner">
-                <div class="image">
-                <img src="images/skewer-kebab-barbecue-food.jpg" alt="">
+        </div>
+    </section>
+    <!-- about section ends -->
+    <!-- services section starts -->
+    <section class="services" id="services">
+        <h1 class="heading">Our Services</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icon">
+                    <img src="images/diet_9677453.png" alt="">
                 </div>
                 <div class="content">
-                <a href="#" class="link">Lorem ipsum dolor sit amet consectetur
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                    <h3>Arranging a Nutrition Plan</h3>
+                    <div class="line"></div>
+                    <p>The best diet plan for long-term weight loss involves switching out unhealthy eating habits for
+                        healthy ones. It should focus on more natural, unprocessed meal choices and include a balance of
+                        fruit and vegetables, protein and healthy fats, while being low in sugar and salt. </p>
+                </div>
+            </div>
+
+            <div class="box">
                 <div class="icon">
-                <a href="#"><i class="fas fa-clock"></i> 11 june, 2023</a>
-                <a href="#"><i class="fas fa-user"></i> by admin</a>
+                    <img src="images/marathon_4781483.png" alt="">
                 </div>
+                <div class="content">
+                    <h3>Marathon Training</h3>
+                    <div class="line"></div>
+                    <p>Training for your marathon means more than just putting in miles. Having your nutrition plan
+                        dialed in for before, during, and after the race is equally important. This guide from sports
+                        nutrition expert Asker Jeukendrup will help you create the right plan for all aspects of your
+                        race day nutrition. </p>
                 </div>
-                </div> 
-               </div>
-</div>
-</section>
-<!-- diet section end -->
-<!-- pricing section starts -->
-<section class="pricing" id="pricing">
-    <h1 class="heading">pricing plan</h1>
-    <div class="box-container">
-    <div class="box">
-    <h3 class="title">basic</h3>
-    <div class="price">
-    <span class="currency">$</span>
-    <span class="amount">40</span>
-    <span class="duration">/year</span>
-    </div>
-    <ul>
-        <ul>
-        <li> <i class="fas fa-check"></i> nutrition plan</li>
-        <li> <i class="fas fa-check"></i> training plan</li>
-        <li> <i class="fas fa-check"></i> body measurment</li>
-        </ul>
-        <p>60 days consultation</p>
-        <p>8 personal meetings</p>
-        <p>free access to additional materials</p>
-        <a href="#" class="btn"> read more</a> 
-    </ul>
-    </div>
+            </div>
 
-    <div class="box-container">
-        <div class="box">
-        <h3 class="title">standart</h3>
-        <div class="price">
-        <span class="currency">$</span>
-        <span class="amount">70</span>
-        <span class="duration">/year</span>
+            <div class="box">
+                <div class="icon">
+                    <img src="images/weight-loss_7126800.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Weight Loss Programs</h3>
+                    <div class="line"></div>
+                    <p>Fat loss refers to weight loss from fat, and it is a more specific and healthful goal than weight
+                        loss.Unintentional weight loss is when you lose weight without changing your diet or exercise
+                        routine, and it can be a sign of stress or a serious illness. </p>
+                </div>
+            </div>
         </div>
-        <ul>
+        <div id="advices">
             <ul>
-            <li> <i class="fas fa-check"></i> nutrition plan</li>
-            <li> <i class="fas fa-check"></i> training plan</li>
-            <li> <i class="fas fa-check"></i> body measurment</li>
+                <h2>Advices</h2>
+                <li><i class="fas fa-check"></i>Some people avoid nuts because they are high in fat. However, nuts and
+                    seeds are incredibly nutritious. They are packed with protein, fiber, and a variety of vitamins and
+                    minerals.
+                </li>
+                <li><i class="fas fa-check"></i>Sugary drinks like sodas, fruit juices, and sweetened teas are the
+                    primary source of added sugar in the American diet.</li>
+                <li><i class="fas fa-check"></i>Despite some controversy over it, coffee is loaded with health benefits.
+                </li>
+                <li><i class="fas fa-check"></i>Fish is a great source of high-quality protein and healthy fat. This is
+                    particularly true of fatty fish, such as salmon, which is loaded with anti-inflammatory omega-3
+                    fatty acids and various other nutrients .</li>
             </ul>
-            <p>80 days consultation</p>
-            <p>10 personal meetings</p>
-            <p>free access to additional materials</p>
-            <a href="#" class="btn"> read more</a> 
+        </div>
+    </section>
+    <!--services section ends-->
+    <!-- diet section starts -->
+    <section class="diet" id="diet">
+        <h1 class="heading">Diet Plan</h1>
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">
+                <h3>All</h3>
+            </li>
+            <li class="buttons" data-filter="breakfast">
+                <h3>Breakfast</h3>
+            </li>
+            <li class="buttons" data-filter="lunch">
+                <h3>Lunch</h3>
+            </li>
+            <li class="buttons" data-filter="dinner">
+                <h3>Dinner</h3>
+            </li>
         </ul>
+
+        <div class="image-container">
+            <!-- Breakfast Section -->
+            <div class="box breakfast">
+                <div class="card">
+                    <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/c3235163-5697-4911-84e9-633c78c9a35b/Derivates/c15df8ba-50ba-4d77-8292-bac5014b9cb0.jpg"
+                        alt="Breakfast 1">
+                    <h2>Classic Pancake</h2>
+                    <p class="description">Delicious fluffy pancakes served with maple syrup and fresh berries.</p>
+                    <p class="price">$9.99</p>
+                    <button class="add-to-cart" data-item-name="Classic Pancake" data-item-price="9.99">Add to
+                        Cart</button>
+                </div>
+            </div>
+
+            <!-- Lunch Section -->
+            <div class="box lunch">
+                <div class="card">
+                    <img src="https://assets.epicurious.com/photos/64a845e67799ee8651e4fb8f/1:1/w_1920,c_limit/AshaGrilledChickenSalad_RECIPE_070523_56498.jpg"
+                        alt="Lunch 1">
+                    <h2>Grilled Chicken Salad</h2>
+                    <p class="description">Healthy and flavorful grilled chicken salad with mixed greens and vinaigrette
+                        dressing.</p>
+                    <p class="price">$12.99</p>
+                    <button class="add-to-cart" data-item-name="Grilled Chicken Salad" data-item-price="12.99">Add to
+                        Cart</button>
+                </div>
+            </div>
+
+            <!-- Dinner Section -->
+            <div class="box dinner">
+                <div class="card">
+                    <img src="https://www.countdown.co.nz/Content/Recipes/230232-Classic-SpagBol_810x520.jpg"
+                        alt="Dinner 1">
+                    <h2>Spaghetti Bolognese</h2>
+                    <p class="description">Classic Italian dish with savory meat sauce served over perfectly cooked
+                        spaghetti.</p>
+                    <p class="price">$15.99</p>
+                    <button class="add-to-cart" data-item-name="Spaghetti Bolognese" data-item-price="15.99">Add to
+                        Cart</button>
+                </div>
+            </div>
         </div>
 
-    <div class="box">
-        <h3 class="title">premium</h3>
-        <div class="price">
-        <span class="currency">$</span>
-        <span class="amount">50</span>
-        <span class="duration">/year</span>
+    </section>
+    <!-- diet section end -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Shopping Cart</h1>
+            <div id="cartItems"></div>
         </div>
-        <ul>
-            <ul>
-            <li> <i class="fas fa-check"></i> nutrition plan</li>
-            <li> <i class="fas fa-check"></i>training plan </li>
-            <li> <i class="fas fa-check"></i> body measurment</li>
-            </ul>
-            <p>20 days consultation</p>
-            <p>3 personal meetings</p>
-            <p>free access to additional materials</p>
-            <a href="#" class="btn"> read more</a> 
-        
     </div>
-    </section>
-<!-- review section starts -->
-<section></section>
-<hl>reviews</hl>
-<div class="swiper review-slider">
-<div class="swiper-wrapper">
-
-<div class="swiper-slide slide">
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, itaque. </p>
-<div class="user"></div>
-<img src="images/person"alt="">
-<div class="info">
-    <h3>ahmed </h3>
-    <span>client</span>
-</div>
-</div>
-</div>
-
-<div class="swiper-slide slide">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, itaque. </p>
-    <div class="user"></div>
-    <img src="images/person"alt="">
-    <div class="info">
-        <h3>JOHN DEO </h3>
-        <span>client</span>
-    </div>
-</div>
-</div>
-</section>
-<!-- newsletter section starts-->
-
-<section class="newsletter">
-    <div class="content">
-    <hl class="heading">subscribe now</hl>
-    <p>for consultion just enter your email -- don't forget the @ </p>
-    <form action=""><input type="email" placeholder="enter your email" class="email"> 
-        <form action=""><input type="submit" value="subscribe">
-    </form>
-</div>
-    </section>
-    <!-- newsletter section ends -->
-     <!-- footer section starts -->
-     <section class="footer">
+    <!-- pricing section starts -->
+    <section class="pricing" id="pricing">
+        <h1 class="heading">pricing plan</h1>
         <div class="box-container">
-            <div id="box1"></div>
-        <h3>quick links</h3>
-      <a  href="#home"> <i class="fas fa-arrow-right"></i>home</a>
-      <a href="#about"> <i class="fa-arrow-right"></i>about</a>
-      <a href="#services"> <i class="fas fa-arrow-right"></i>services</a>
-      <a href="#diet"> <i class="fas fa-arrow-right"></i>diet</a>
-      <a href="#blog"> <i class="fas fa-arrow-right"></i>blog</a>
-      <a href="#reviews"> <i class="fas fa-arrow-right"></i>reviews</a>
-        </div>
-        <div id="box2">
-            <h3>extra links</h3>
-            <a  href="#"> <i class="fas fa-arrow-right"></i>my account</a>
-            <a href="#"> <i class="fa-arrow-right"></i>my order</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>my wishlist</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>ask questions</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>terms of use</a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+            <div class="box">
+                <h3 class="title">basic</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">40</span>
+                    <span class="duration">/year</span>
+                </div>
+                <ul>
+                    <ul>
+                        <li> <i class="fas fa-check"></i> nutrition plan</li>
+                        <li> <i class="fas fa-check"></i> training plan</li>
+                        <li> <i class="fas fa-check"></i> body measurment</li>
+                    </ul>
+                    <p>60 days consultation</p>
+                    <p>8 personal meetings</p>
+                    <p>free access to additional materials</p>
+                    <a href="#" class="btn"> read more</a>
+                </ul>
+            </div>
 
-        </div>
-        <div id="box3">
-            <h3>contact info</h3>
-            <a  href="#"> <i class="fas fa-phone"></i>+216 50376171</a>
-            <a href="#"> <i class="fas fa-phone"></i>+216 53896755</a>
-            <a href="#"> <i class="fas fa-envelope"></i>rbk@gmail.com</a>
-            <a href="#"> <i class="fas fa-map"></i>kef,Hay dir</a>
-        </div>
-        <div id="box4">
-            <h3>follow us</h3>
-            <a  href="#"> <i class="fab fa-facebook-f"></i>+facebook</a>
-            <a href="#"> <i class=" fab fa-twitter"></i>twitter</a>
-            <a href="#"> <i class="fab fa-instagram"></i>rinstagram</a>
-            <a href="#"> <i class="fab fa-linkedin"></i>linkedin</a>
-            <a href="#"> <i class="fab fa-github"></i>github</a>
+            <div class="box-container">
+                <div class="box">
+                    <h3 class="title">standart</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">50</span>
+                        <span class="duration">/year</span>
+                    </div>
+                    <ul>
+                        <ul>
+                            <li> <i class="fas fa-check"></i> nutrition plan</li>
+                            <li> <i class="fas fa-check"></i> training plan</li>
+                            <li> <i class="fas fa-check"></i> body measurment</li>
+                        </ul>
+                        <p>80 days consultation</p>
+                        <p>10 personal meetings</p>
+                        <p>free access to additional materials</p>
+                        <a href="#" class="btn"> read more</a>
+                    </ul>
+                </div>
 
-        </div>
-        </div>
-        </section>
-      <!-- footer section ends -->
-      <div class="container">
-        <form action="action_page.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
+                <div class="box">
+                    <h3 class="title">premium</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">70</span>
+                        <span class="duration">/year</span>
+                    </div>
+                    <ul>
+                        <ul>
+                            <li> <i class="fas fa-check"></i> nutrition plan</li>
+                            <li> <i class="fas fa-check"></i>training plan </li>
+                            <li> <i class="fas fa-check"></i> body measurment</li>
+                        </ul>
+                        <p>20 days consultation</p>
+                        <p>3 personal meetings</p>
+                        <p>free access to additional materials</p>
+                        <a href="#" class="btn"> read more</a>
+
+                </div>
+    </section>
+    <!-- review section starts -->
+
+    <!-- newsletter section starts-->
+    <div class="container">
+        <form>
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
         </form>
-</div>  
-<form action="action_page.php" method="post">
-    <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
-  
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-  
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-  
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+    <section class="newsletter">
+        <div class="content">
+            <hl class="heading">subscribe now</hl>
+            <p>for consultion just enter your email -- don't forget the @ </p>
+            <form action=""><input type="email" placeholder="enter your email" class="email">
+                <form action=""><input type="submit" value="subscribe">
+                </form>
+        </div>
+    </section>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
+                <!-- Left -->
+                <div class="me-5">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">Company name</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Here you can use rows and columns to organize your footer
+                                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Products</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-dark">MDBootstrap</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">MDWordPress</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">BrandFlow</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Bootstrap Angular</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-dark">Your Account</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Become an Affiliate</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Shipping Rates</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-dark">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                Â© 2020 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
     </div>
-  
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-      <!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
-
-<!-- The Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'"
-class="close" title="Close Modal">&times;</span>
-
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
+    <!-- End of .container -->
+   
 </div>
 
-    <script>  
-   </script>
-   <!-- jquery cdn link -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--swipercdn link-->
-<script src="https://cdn.jsdeIivr.net/npm/swiper@9/swiper-bund1e.min.js"></script>
-<!--custom js link -->
-<script src="main.js"></script>
-</body>
-</html>
+<div class="auth-container" id="auth-container">
+    <div class="auth-form" id="register-form">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <label for="imageUrl">Image URL:</label>
+            <input type="text" id="imageUrl" required>
+
+            <button type="button" onclick="register()">Register</button>
+        </form>
+    </div>
+
+    <div class="auth-form" id="login-form">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required>
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+</div>
+    <script>
+    </script>
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--swipercdn link-->
+    <!--custom js link -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
